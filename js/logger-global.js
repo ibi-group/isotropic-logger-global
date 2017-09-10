@@ -1,8 +1,6 @@
-import {
-    createLogger as _createLogger
-} from 'bunyan';
+import _Bunyan from 'bunyan';
 
-(global || window || {}).__logger = _createLogger({
+(global || window || {}).__logger = _Bunyan.createLogger({
     name: 'isotropic'
 });
 

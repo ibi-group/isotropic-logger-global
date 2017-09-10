@@ -1,18 +1,10 @@
 import '../js/logger-global.js';
+import _Bunyan from 'bunyan';
+import _chai from 'chai';
+import _mocha from 'mocha';
 
-import {
-    describe,
-    it
-} from 'mocha';
-
-import Bunyan from 'bunyan';
-
-import {
-    expect
-} from 'chai';
-
-describe('logger-global', () => {
-    it('should represent a logger instance', () => {
-        expect(__logger).to.be.an.instanceOf(Bunyan);
+_mocha.describe('logger-global', () => {
+    _mocha.it('should represent a logger instance', () => {
+        _chai.expect(__logger).to.be.an.instanceOf(_Bunyan);
     });
 });
